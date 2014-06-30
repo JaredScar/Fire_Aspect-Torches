@@ -18,7 +18,7 @@ import org.bukkit.plugin.java.JavaPlugin;
  */
 public class Main extends JavaPlugin implements Listener {
     private FileConfiguration settings;
-    public void onEnable() {
+    public void onEnable() {                                                  //Re-commit
         getConfig().options().copyDefaults(true);
         saveDefaultConfig();
         this.settings = this.getConfig();
